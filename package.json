@@ -1,0 +1,39 @@
+{
+  "name": "virtual-streamgraph",
+  "version": "1.0.0",
+  "description": "Create a virtual-dom stream graph",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js",
+    "example": "budo ./example/index.js --css ./example/index.css"
+  },
+  "repository": "yoshuawuyts/virtual-streamgraph",
+  "keywords": [
+    "stream",
+    "graph",
+    "virtual-dom",
+    "vdom"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^3.5.13",
+    "virtual-widget": "^1.2.0"
+  },
+  "devDependencies": {
+    "budo": "^8.0.0",
+    "dependency-check": "^2.5.1",
+    "hyperx": "^1.2.0",
+    "istanbul": "^0.4.2",
+    "standard": "^5.4.1",
+    "tape": "^4.4.0",
+    "virtual-app": "^2.2.0",
+    "virtual-dom": "^2.1.1",
+    "xtend": "^4.0.1"
+  },
+  "files": [
+    "index.js",
+    "bin/*"
+  ]
+}
