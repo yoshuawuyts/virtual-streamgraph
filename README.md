@@ -30,7 +30,7 @@ console.log(vdom.create(tree).toString())
 ```
 
 ## API
-### vgraph(opts, data)
+### vgraph(opts)
 Create a new `virtual-streamgraph` from data. Opts can contain the following
 fields:
 - __opts.data:__ set data to be rendered
