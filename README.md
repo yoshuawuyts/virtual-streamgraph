@@ -9,7 +9,7 @@ Create a virtual-dom [streamgraph][12]. Useful to visualize
 
 ## Usage
 ```js
-const vgraph = require('virtual-streamgraph')
+const createGraph = require('virtual-streamgraph')
 const vdom = require('virtual-dom')
 const hyperx = require('hyperx')
 const hx = hyperx(vdom.h)
