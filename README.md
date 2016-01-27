@@ -2,7 +2,7 @@
 [![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
 [![downloads][8]][9] [![js-standard-style][10]][11]
 
-Create a virtual-dom [streamgraph][12]. Useful to visualize
+Create a [virtual-dom][14] [streamgraph][12]. Useful to visualize
 [time series data][13].
 
 ![example](./example/example.png)
@@ -66,3 +66,4 @@ $ npm install virtual-streamgraph
 [11]: https://github.com/feross/standard
 [12]: http://www.visualisingdata.com/2010/08/making-sense-of-streamgraphs/
 [13]: https://en.wikipedia.org/wiki/Time_series
+[14]: https://github.com/Matt-Esch/virtual-dom
