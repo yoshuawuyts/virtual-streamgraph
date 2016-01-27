@@ -5,6 +5,8 @@
 Create a virtual-dom [streamgraph][12]. Useful to visualize
 [time series data][13].
 
+![example](./example/example.png)
+
 ## Usage
 ```js
 const vgraph = require('virtual-streamgraph')
