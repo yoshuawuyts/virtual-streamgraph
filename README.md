@@ -23,7 +23,7 @@ const data = [
 
 const tree = hx`
   <section className="my-graph">
-    ${createGraph({ height: 500, width: 960, data: state.data })}
+    ${vgraph({ height: 500, width: 960, data: state.data })}
   </section>
 `
 console.log(vdom.create(tree).toString())
