@@ -15,15 +15,15 @@ const hyperx = require('hyperx')
 const hx = hyperx(vdom.h)
 
 const data = [
-  { name: 'apples', values: : [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] },
-  { name: 'bananas', values: : [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] },
-  { name: 'cherries', values: : [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] },
-  { name: 'dates', values: : [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] }
+  { name: 'apples', values: [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] },
+  { name: 'bananas', values: [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] },
+  { name: 'cherries', values: [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] },
+  { name: 'dates', values: [ { x: 1, y: 55 }, { x: 2, y: 65 }, { x: 3, y: 67 }] }
 ]
 
 const tree = hx`
   <section className="my-graph">
-    ${vgraph({ height: 500, width: 960, data: state.data })}
+    ${vgraph({ height: 500, width: 960, data: data })}
   </section>
 `
 console.log(vdom.create(tree).toString())
