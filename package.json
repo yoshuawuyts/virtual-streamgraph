@@ -1,6 +1,6 @@
 {
   "name": "virtual-streamgraph",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create a virtual-dom stream graph",
   "main": "index.js",
   "scripts": {
