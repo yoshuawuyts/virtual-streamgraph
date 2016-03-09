@@ -38,7 +38,12 @@ function render (el, state) {
     .attr('width', width)
     .attr('height', height)
 
-  svg.selectAll('path')
+  const groups = svg.selectAll('g')
+    .data(layers)
+    .enter()
+    .append('g')
+
+  groups.selectAll('path')
     .data(layers)
     .enter()
     .append('path')
@@ -46,6 +51,12 @@ function render (el, state) {
     .style('fill', function (d, i) {
       return color(hashString(data[i].name))
     })
+
+  groups.selectAll('text')
+    .data(layers)
+    .enter()
+    .append('text')
+    .text(function (d) { return 'hey' })
 }
 
 // create svg area
